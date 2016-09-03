@@ -1,30 +1,33 @@
-# docker image: alpinebase [Layer 2]
+# docker image: alpinebash [Layer 2]
 
-This layer 2 bash image is built upon [mbitz/alpinebase](https://hub.docker.com/r/mbitz/alpinebase/)
+This layer 2 docker image is built upon [mbitz/alpinebase](https://hub.docker.com/r/mbitz/alpinebase/)
 
 ## Description
 
-Install bash as default shell. Change time zone from GMT0 to GMT+8.
+Install bash as default shell. Set time zone to Asia/Singapore.
 
-
-## Upcoming Changes
-
-TBD
 
 ## Additions
+Packages:
+```
+bash
+```
+
+Files and Folders:
+```
 /:
 	entrypoint
 
 /root/:
     .bashrc
 	.bash_profile
+```
 
 ## Tags
 
-* `latest` tracks the `edge` tag from [upstream](https://hub.docker.com/r/_/alpine/)
+* `latest` tracks the `edge` tag from [mbitz/alpinebase](https://hub.docker.com/r/mbitz/alpinebase/)
 
-_This includes the `main`, `testing`, and `community` repositories, but all packages outside `main` are masked. To import them, just use `apk-install pkgname@reponame`._
+* `e340` tracks the `e340` tag from [mbitz/alpinebase](https://hub.docker.com/r/mbitz/alpinebase/)
 
 # License
-[MIT](https://tldrlegal.com/license/mit-license)
-
+[Apache 2.0](https://www.tldrlegal.com/l/apache2)

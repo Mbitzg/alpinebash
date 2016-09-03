@@ -1,4 +1,4 @@
-FROM            mbitz/alpinebase
+FROM            mbitz/alpinebase:e340
 MAINTAINER      Howard Mei      <howardmei@mubiic.com>
 ENV             TIMEZONE        Asia/Singapore
 
